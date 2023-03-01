@@ -1,0 +1,124 @@
+.home {
+  display: flex;
+  gap: 2rem;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 80vw;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.home .home-text {
+  max-width: 600px;
+}
+
+.home .home-text h1 {
+  color: rgb(36, 35, 41);
+  /* animation: 4s animation infinite; */
+}
+
+/* @keyframes animation {
+  25%{
+    transform: translateX(-240px); 
+  }
+  26%{
+    visibility: hidden;
+  }
+} */
+.home .home-text h3 {
+  margin-top: 1rem;
+}
+
+.home .home-text p {
+  color: rgb(138, 143, 128);
+  margin-top: 2px;
+}
+
+p {
+  font-size: 0.95rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+
+.home .home-img {
+  max-width: 600px;
+}
+
+.home .home-img img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.home-btn {
+  margin-top: 2rem;
+}
+
+.btn-text {
+  outline: none;
+  border: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  transition: all 0.1s linear 0s;
+  font-size: 2rem;
+  width: fit-content;
+  text-decoration: none;
+  font-weight: 900;
+  background-color: indigo;
+  color: #fff;
+}
+
+.home-btn .btn-text:hover {
+  background: linear-gradient(110deg, #333850 60%, #74df50 60%);
+  ;
+
+}
+
+@media screen and (max-width: 650px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    margin-top: 5rem;
+  }
+
+  .btn-text{
+    width: 100%;
+  }
+  .home .home-img{
+    width: 100%;
+  }
+.home-text{
+  margin-top: 1.2rem;
+}
+}
+
+.run {
+  display: flex;
+  width: 185px;
+  height: 40px;
+  background: #fff;
+  margin-left: 77px;
+  position: relative;
+  margin-top: -40px;
+  animation: run 3s infinite ease-in-out;
+}
+
+@keyframes run {
+  100%{
+    transform: translateX(200px);
+  }
+}
+
+.arrow{
+  display: flex;
+  position: fixed;
+  width: 80vw;
+  max-width: 1400px;
+}

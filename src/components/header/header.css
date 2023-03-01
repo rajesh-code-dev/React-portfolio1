@@ -1,0 +1,125 @@
+.navbarContainer {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background-color: #fff;
+}
+
+.navbarContainer nav {
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 20px;
+  max-height: 80px;
+  width: 85vw;
+  max-width: 1400px;
+  margin: auto;
+
+}
+
+/* .navbarContainer nav {
+  display: flex;
+
+} */
+
+ul{
+  margin-top: -31px;
+}
+
+.navbarContainer nav {
+  padding: 20px 10px 0 10px;
+  list-style: none;
+}
+
+.navbarContainer nav a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 900;
+  color: #1b2e3e;
+  margin: 0 6px 0 6px;
+  padding: 0 3px 0 3px;
+}
+
+nav a:hover{
+  border: 2px solid blue;
+  border-radius: 3px;
+}
+
+.navbarContainer .nav-btn{
+  padding: 5px;
+  cursor: pointer;
+  /* background: blue;  */
+  border: none;
+  outline: none;
+  color: crimson;
+  visibility: hidden;
+  opacity: 0;
+  /* display: flex; */
+}
+
+/* .nav-btn span{
+  width: 10px;
+  height: 6px;
+  border: 2px solid blue;
+  margin: 0 2px 0 2px;
+  /* display: block; */
+
+@media only screen and (max-width: 650px) {
+  /* .navbarContainer{
+    width: 100vw;
+    height: 75px;
+    background-color: #fff;
+  } */
+  .navbarContainer nav{
+    width: 102vw;
+    display: block;
+    height: 32vh;
+    max-height: 217px;
+  }
+  nav {
+    position: fixed;
+    margin-right: 30px;
+    gap: 1rem;
+    transition: 1s;
+    transform: translateY(93vh);
+    background-color: rgb(35, 143, 215);
+  }
+
+  .link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .responsive_nav{
+    transform: translatey(68vh);
+  }
+  .navbarContainer .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .right{
+    margin-left: 300px;
+  }
+
+  .wrap{
+    width: 85vw;
+    max-width: 650px;
+    text-align: end;
+    margin-top: 13px;
+  }
+  .wrap .right{
+    font-size: 2rem;
+  }
+}
+/* 
+@media only screen and(max-width: 340px){
+  .toggle{
+    margin-left: 300px
+  }
+} */

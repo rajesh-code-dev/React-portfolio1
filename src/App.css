@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* height: 10vh; */
+  /* max-height: 80px; */
+  width: 85vw;
+  max-width: 1400px;
+  margin: auto;
+}
+
+@media screen and (max-width: 650px){
+  .main{
+    width: 100vw;
+  }
+  #dark .navbarContainer{
+    background-color: rgb(10, 25, 47);
+  }
+ 
+}
+#dark .navbarContainer{
+  background-color: rgb(10, 25, 47);
+}
+.navbar-theme {
+  position: absolute;
+  margin-top: 2.4rem;
+  margin-left: 1rem;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  font-size: 0.6rem;
+}
+
+#light {
+  background-color: #fff;
+}
+
+#dark {
+  background-color: rgb(10, 25, 47);
+}
+
+#dark .run {
+  background-color: darkslategrey;
+}
+
+#dark .home-text-h1 {
+  color: #fff;
+}
+
+#dark .nav-text {
+  color: #d6e3eb;
+  /* -webkit-text-stroke: 0.3px #fff;
+  background-color: transparent; */
+}
+
+#dark .skill-text {
+  color: #fff;
+}
+
+#dark .btn-text {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#dark .skill-h2 {
+  color: #fff;
+}
+
+/*project */
+#dark .projects-h2{
+  color: #eee;
+}
+
+#dark .project-1-h3{
+  color: rgb(255, 255, 255);
+}
+
+#dark .project-1-p{
+  color: rgb(109, 106, 124);
+}
+
+/* home */
+#dark .home-text-h3{
+  color: rgb(134, 127, 172);
+}
