@@ -53,10 +53,9 @@ const work = () => {
             <li className="project-1-skill-item">JavaScript</li>
             <li className="project-1-skill-item">HTML</li>
             <li className="project-1-skill-item">CSS</li>
-            <li className="project-1-skill-item"></li>
           </ul>
           <div className="project-btns">
-            <div className="project-live-btn">
+            <div className="project-live-btn res">
               <a className='link' href="https://calculator-javascript-rajesh.netlify.app">Live <FaArrowUp></FaArrowUp></a>
             </div>
             <div className="project-git">
