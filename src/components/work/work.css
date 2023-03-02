@@ -25,12 +25,12 @@
     flex-wrap: wrap;
     gap: 0.5rem;
 }
+
 ul{
     list-style: none;
 }
 
 .project-1-skill li{
-    
     background-color: rgb(109, 106, 124);
     color: rgb(255, 255, 255);
     padding: 0.1rem 0.2rem;
@@ -58,6 +58,7 @@ ul{
     font-size: 1rem;
     width: fit-content;
     text-decoration: none;
+    margin-top: 0;
 }
 
 .gitlink{
@@ -83,10 +84,4 @@ ul{
 
 .projects-h2{
     font-size: 3rem;
-}
-
-@media only screen and(max-width: 660px){
-    .project-live-btn{
-        margin-top: -10px
-    }
 }

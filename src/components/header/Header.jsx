@@ -8,7 +8,7 @@ const Header = () => {
   }
   return (
     <div className='navbarContainer'>
-      <div className="wrap " >
+      <div className="wrap ">
         <button className='nav-btn right'onClick={showNavBar} >
           <FaBars/>
         </button>
