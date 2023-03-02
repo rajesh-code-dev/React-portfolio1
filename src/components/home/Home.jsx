@@ -11,7 +11,7 @@ const Home = () => {
           <h3 className='home-text-h3'>I build amazing things for the web.</h3>
           <p >I am a web developer specializing in Front-End development. A MERN Stack enthusiast, JavaScript lover.</p>
           <div className="home-btn" >
-            <a href="#contect" className='btn-text'>Contect me.</a>
+            <a href="#contect" className='btn-text'>Contact me.</a>
           </div>
         </div>
         <div className='home-img'>

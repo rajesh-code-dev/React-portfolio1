@@ -19,7 +19,7 @@ const Header = () => {
             <a className='nav-text' ref={navRef} href="#about">About</a>
             <a className='nav-text' href="#skill">Skill</a>
             <a className='nav-text' href="#projects">Project</a>
-            <a className='nav-text' href="#contect">Contect</a>
+            <a className='nav-text' href="#contect">Contact</a>
             <button className='nav-btn close-nav-btn' onClick={showNavBar}>
               <FaTimes />
             </button>
