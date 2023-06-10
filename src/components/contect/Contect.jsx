@@ -10,7 +10,7 @@ const Contect = () => {
         <a href="mailto:choudharyrajesh729@gmail.com" className='btn-gm'>Say Hii</a>
       </div>
       <div className="linkedin">
-        <a href="https://github.com/rajesh7688"><FaLinkedin></FaLinkedin></a>
+        <a href="https://www.linkedin.com/in/rajesh-chaudhary-031028236"><FaLinkedin></FaLinkedin></a>
         <a href="https://github.com/rajesh7688"><FaGithub></FaGithub></a>
         <a href="https://instagram.com/rajeshchoudhary7688"><FaInstagram></FaInstagram></a>
       </div>
