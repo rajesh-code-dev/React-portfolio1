@@ -1,39 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Roboto+Mono&display=swap');
+
 .home {
-  display: flex;
-  gap: 2rem;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  width: 80vw;
+  width: 100vw;
   max-width: 1400px;
   margin: auto;
-  margin-top: 10rem;
+  height: 100vh;
 }
 
 .home .home-text {
-  max-width: 600px;
+  max-width: 100vw;
+  line-height: .9;
+  margin-top: 202px;
 }
 
 .home .home-text h1 {
-  color: rgb(36, 35, 41);
-  /* animation: 4s animation infinite; */
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12vw;
+  /* opacity: 0.7; */
+  transform: translateY(100%);
 }
-
-/* @keyframes animation {
-  25%{
-    transform: translateX(-240px); 
-  }
-  26%{
-    visibility: hidden;
-  }
-} */
-.home .home-text h3 {
-  margin-top: 1rem;
+.home .home-text .home-text1-h1{
+  padding-left: 4rem;
 }
 
 .home .home-text p {
-  color: rgb(138, 143, 128);
+  color: #fff;
+  opacity: 0.7;
   margin-top: 2px;
 }
 
@@ -80,12 +73,66 @@ p {
 
 }
 
-@media screen and (max-width: 650px) {
+.arrow{
+  display: flex;
+  position: fixed;
+  width: 80vw;
+  max-width: 1400px;
+}
+
+.homeFooter{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 0 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.homeFooterText{
+  margin-top: 1rem;
+  animation: animateSmallTxt 12s linear infinite;
+  position: relative;
+  text-wrap: nowrap;
+  opacity: 0.7;
+}
+
+/* animation css */
+
+.animate{
+  display: flex;
+  gap: 0;
+  width: 70%;
+  overflow: hidden;
+}
+
+.home-text-h3 {
+  margin-top: 1rem;
+  animation: animateSmallTxt 12s linear infinite;
+  
+  text-wrap: nowrap;
+}
+
+@keyframes animateSmallTxt {
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+
+@media screen and (max-width: 836px) {
   .home {
     display: flex;
     flex-direction: column-reverse;
     width: 100vw;
     margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 
   .btn-text{
@@ -116,9 +163,10 @@ p {
   }
 }
 
-.arrow{
-  display: flex;
-  position: fixed;
-  width: 80vw;
-  max-width: 1400px;
+.bounding{
+  overflow: hidden;
+}
+
+.txtAnimate{
+  transform: translateY(0%);
 }

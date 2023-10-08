@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Roboto+Mono&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1.3px;
+  
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.app{
+  overflow: hidden;
 }
 
 .main {
@@ -19,22 +23,24 @@ html {
   align-items: center;
   /* height: 10vh; */
   /* max-height: 80px; */
-  width: 85vw;
-  max-width: 1400px;
+  width: 100vw;
+  /* max-width: 1400px; */
   margin: auto;
+  position: relative;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 836px){
   .main{
     width: 100vw;
   }
   #dark .navbarContainer{
-    background-color: rgb(10, 25, 47);
+    background-color: rgb(0, 0, 0);
   }
  
 }
 #dark .navbarContainer{
-  background-color: rgb(10, 25, 47);
+  background-color: rgb(0, 0, 0);
 }
 .navbar-theme {
   position: absolute;
@@ -47,10 +53,12 @@ html {
 
 #light {
   background-color: #fff;
+  overflow: hidden;
 }
 
 #dark {
-  background-color: rgb(10, 25, 47);
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
 }
 
 #dark .run {
@@ -98,4 +106,8 @@ html {
 /* home */
 #dark .home-text-h3{
   color: rgb(134, 127, 172);
+}
+
+#dark #circle{
+  background-color: #fff;
 }

@@ -2,7 +2,8 @@
   width: 100%;
   top: 0;
   position: fixed;
-  background-color: #fff;
+  background-color: #000;
+  z-index: 1;
 }
 
 .navbarContainer nav {
@@ -29,18 +30,20 @@ ul{
 }
 
 .navbarContainer nav {
-  padding: 20px 10px 0 10px;
+  /* padding: 20px 10px 0 10px; */
   list-style: none;
 }
 
 .navbarContainer nav a {
   text-decoration: none;
   list-style: none;
-  font-size: 20px;
-  font-weight: 900;
-  color: #1b2e3e;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
   margin: 0 6px 0 6px;
   padding: 0 3px 0 3px;
+  border: 2px solid transparent;
 }
 
 nav a:hover{

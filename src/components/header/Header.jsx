@@ -14,7 +14,9 @@ const Header = () => {
         </button>
       </div>
       <div className='navbar'>
+      <h5>MODERN WEB</h5>
         <nav className="cont" ref={navRef}>
+          
           <ul className='link'>
             <a className='nav-text' ref={navRef} href="#about">About</a>
             <a className='nav-text' href="#skill">Skill</a>
