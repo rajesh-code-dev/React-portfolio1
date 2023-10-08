@@ -17,7 +17,6 @@
   width: 85vw;
   max-width: 1400px;
   margin: auto;
-
 }
 
 /* .navbarContainer nav {
@@ -27,6 +26,7 @@
 
 ul{
   margin-top: -31px;
+  display: flex;
 }
 
 .navbarContainer nav {
@@ -115,4 +115,9 @@ nav a:hover{
   .wrap .right{
     font-size: 2rem;
   }
+}
+
+
+.boundingtxt{
+  transform: translateY(-100%);
 }

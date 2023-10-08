@@ -76,8 +76,26 @@ p {
 .arrow{
   display: flex;
   position: fixed;
-  width: 80vw;
+  justify-content: end;
+  width: 120px;
+  height: 60px;
+  right: -32px;
+  top: 40%;
   max-width: 1400px;
+  color: #000;
+  background-color: #fff;
+  transform: rotate(270deg);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.arrow div{
+  /* top: 2%; */
+  margin-top: 20px;
+  margin-right: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+
 }
 
 .homeFooter{
@@ -105,6 +123,12 @@ p {
   gap: 0;
   width: 70%;
   overflow: hidden;
+  justify-content: end;
+  padding: 2px;
+}
+
+.endtxt{
+  transform: translateY(-150%);
 }
 
 .home-text-h3 {
