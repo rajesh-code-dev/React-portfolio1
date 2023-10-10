@@ -1,4 +1,4 @@
-import { useRef, useState} from "react";
+import { useRef, useState } from "react";
 import "./header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 const Header = () => {
@@ -8,11 +8,10 @@ const Header = () => {
   };
 
   const [txtTransform, setTxtTransform] = useState();
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     const txtAnimate = localStorage.getItem("txtAnimate");
-    setTxtTransform(txtAnimate)
-  })
- 
+    setTxtTransform(txtAnimate);
+  });
 
   return (
     <div className="navbarContainer">

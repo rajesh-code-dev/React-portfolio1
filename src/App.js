@@ -13,7 +13,7 @@ import {
   Footer,
   Scrollup,
   Circle,
-  Circle1
+  Circle1,
 } from "./components/component";
 
 // import { createContext } from 'react';
@@ -28,28 +28,32 @@ function App() {
 
   return (
     // <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      
-      <div className="App" id={theme} style={{color: '#fff', background: '#000'}}>
+
+    <div
+      className="App"
+      id={theme}
+      style={{ color: "#fff", background: "#000" }}
+    >
       {/* <Circle1/> */}
       <Circle />
-        <Header></Header>
-        <div className="navbar-theme">
-          {/* <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} /> */}
-        </div>
-        <main className="main" style={{color: '#fff'}}>
-          <Home></Home>
-          {/* <About></About>
-          <Skills></Skills>
-          <Services></Services>
-          <Qualification></Qualification>
-          <Work></Work>
-          <Testimonials></Testimonials>
-          <Contect></Contect> */}
-        </main>
-
-        <Footer></Footer>
-        <Scrollup></Scrollup>
+      <Header></Header>
+      <div className="navbar-theme">
+        {/* <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} /> */}
       </div>
+      <main className="main" style={{ color: "#fff" }}>
+        <Home></Home>
+        <About></About>
+        <Skills></Skills>
+        <Services></Services>
+        <Qualification></Qualification>
+        <Work></Work>
+        <Testimonials></Testimonials>
+        <Contect></Contect>
+      </main>
+
+      <Footer></Footer>
+      <Scrollup></Scrollup>
+    </div>
     // </ThemeContext.Provider>
   );
 }
