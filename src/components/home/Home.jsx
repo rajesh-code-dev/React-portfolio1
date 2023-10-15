@@ -72,15 +72,15 @@ const Home = () => {
             <path
               d="
                  M 100, 100
-                  m -75, 0
-                  a 75,75 0 1,0 150,0
-                  a 75,75 0 1,0 -150,0"
+                  m 75, 0
+                  a 75,75 0 1,0 -150,0
+                  a 75,75 0 1,0 150,0"
               id="path-circle"
               fill="none"
             />
             <text>
               <textPath href="#path-circle" fill="white">
-                RAJESH REACT DEVELOPER || WEB DEVELOPER || JAVASCRIPT LOVER
+                RAJESH REACT DEVELOPER || JAVASCRIPT LOVER
               </textPath>
             </text>
           </svg>
