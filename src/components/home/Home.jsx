@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import "./home.css";
 import img from "../home/img1.jpeg";
-const Home = () => {
+const Home = ({ setScale }) => {
   const [txtTransform, setTxtTransform] = useState();
   window.addEventListener("load", (event) => {
     setTxtTransform("0");
   });
 
   localStorage.setItem("txtAnimate", txtTransform);
+
+  const scaleCircle = () => {
+    setScale("30");
+  };
 
   return (
     <>
@@ -71,10 +75,10 @@ const Home = () => {
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path
               d="
-                 M 100, 100
-                  m 75, 0
-                  a 75,75 0 1,0 -150,0
-                  a 75,75 0 1,0 150,0"
+       M 100, 100
+        m 75, 0
+        a 75,75 0 1,1 -150,0
+        a 75,75 0 1,1 150,0"
               id="path-circle"
               fill="none"
             />
@@ -85,7 +89,11 @@ const Home = () => {
             </text>
           </svg>
         </div>
-        <div className="arrow">
+        <div
+          className="arrow"
+          onMouseOver={() => scaleCircle()}
+          onMouseOut={() => setScale("1")}
+        >
           <div>Contact Me.</div>
         </div>
       </div>
