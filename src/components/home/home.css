@@ -1,16 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Roboto+Mono&display=swap");
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+
 .home {
   width: 100vw;
+  height: 100vh;
   max-width: 1400px;
   margin: auto;
-  height: 100vh;
   display: flex;
   gap: 5rem;
+  background-color: #000;
 }
 
 .home .home-text {
-  max-width: 100vw;
+  /* max-width: 100vw; */
   line-height: 0.9;
   margin-top: 202px;
 }
@@ -77,12 +84,12 @@ p {
 .arrow {
   display: flex;
   position: fixed;
-  justify-content: end;
+  /* justify-content: end; */
   width: 120px;
   height: 60px;
   right: -32px;
   top: 40%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   color: #000;
   background-color: #fff;
   transform: rotate(270deg);
@@ -106,6 +113,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  color: #fff;
 }
 
 .homeFooterText {

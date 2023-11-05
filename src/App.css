@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Roboto+Mono&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 1.3px;
-  
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.app{
+.app {
   overflow: hidden;
 }
 
@@ -30,16 +29,15 @@ html {
   overflow: hidden;
 }
 
-@media screen and (max-width: 836px){
-  .main{
+@media screen and (max-width: 836px) {
+  .main {
     width: 100vw;
   }
-  #dark .navbarContainer{
+  #dark .navbarContainer {
     background-color: rgb(0, 0, 0);
   }
- 
 }
-#dark .navbarContainer{
+#dark .navbarContainer {
   background-color: rgb(0, 0, 0);
 }
 .navbar-theme {
@@ -79,7 +77,7 @@ html {
   color: #fff;
 }
 
-#dark .contect-h2{
+#dark .contect-h2 {
   color: #eee;
 }
 #dark .btn-text {
@@ -91,23 +89,28 @@ html {
 }
 
 /*project */
-#dark .projects-h2{
+#dark .projects-h2 {
   color: #eee;
 }
 
-#dark .project-1-h3{
+#dark .project-1-h3 {
   color: rgb(255, 255, 255);
 }
 
-#dark .project-1-p{
+#dark .project-1-p {
   color: rgb(109, 106, 124);
 }
 
 /* home */
-#dark .home-text-h3{
+#dark .home-text-h3 {
   color: rgb(134, 127, 172);
 }
 
-#dark #circle{
+#dark #circle {
   background-color: #fff;
+}
+
+.svg-box {
+  width: 300px;
+  height: 300px;
 }

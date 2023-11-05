@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import { BrowserRouter, Routes, Route, useNavigation } from "react-router-dom";
 import "./App.css";
 import {
   Header,
@@ -14,6 +15,7 @@ import {
   Scrollup,
   Circle,
   Circle1,
+  ContactForm,
 } from "./components/component";
 
 // import { createContext } from 'react';
@@ -29,35 +31,38 @@ function App() {
   };
 
   return (
-    // <ThemeContext.Provider value={{ theme, toggleTheme }}>
-
-    <div
-      className="App"
-      id={theme}
-      style={{ color: "#fff", background: "#000" }}
-    >
-      {/* <Circle1/> */}
-      <Circle scale={scale} />
-      <Header></Header>
-      <div className="navbar-theme">
-        {/* <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} /> */}
-      </div>
-      <main className="main" style={{ color: "#fff" }}>
-        <Home setScale={setScale}></Home>
-        <About></About>
-        <Skills></Skills>
-        <Services></Services>
-        <Qualification></Qualification>
-        <Work></Work>
-        <Testimonials></Testimonials>
-        <Contect></Contect>
-      </main>
-
-      <Footer></Footer>
-      <Scrollup></Scrollup>
-    </div>
-    // </ThemeContext.Provider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+{
+  /* <div
+className="App"
+id={theme}
+style={{ color: "#fff", background: "#000" }}
+>
+<Circle scale={scale} />
+<Header></Header>
+<div className="navbar-theme">
+</div>
+<main className="main" style={{ color: "#fff" }}>
+  <Home setScale={setScale}></Home>
+  <About></About>
+  <Skills></Skills>
+  <Services></Services>
+  <Qualification></Qualification>
+  <Work></Work>
+  <Testimonials></Testimonials>
+  <Contect></Contect>
+</main>
+
+<Footer></Footer>
+<Scrollup></Scrollup>
+</div> */
+}
