@@ -13,7 +13,7 @@ import Circle from "./circle/Circle";
 import Circle1 from "./circle/Circle1";
 import ContactForm from "./contect/contactafrom/ContactForm";
 
-export default {
+export {
   About,
   Contect,
   Footer,

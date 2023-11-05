@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import "./home.css";
 import img from "../home/img1.jpeg";
-import Header from "../component";
+import Header from "../header/Header";
 import { ContactForm } from "../component";
 const Home = ({ setScale }) => {
   const [txtTransform, setTxtTransform] = useState();
@@ -18,10 +18,21 @@ const Home = ({ setScale }) => {
 
   const showForm = () => {};
 
+  useEffect(() => {
+    setTxtTransform("0");
+  }, []);
+
+  useEffect(() => {
+    // Apply transition property after a delay
+    setTimeout(() => {
+      setTxtTransform("1");
+    }, 100);
+  }, []);
+
   return (
     <>
       <div className="container">
-        <Header />
+        {/* <Header /> */}
         <div className="home" id="home1">
           <div className="home-text">
             <div className="bounding">
@@ -59,6 +70,8 @@ const Home = ({ setScale }) => {
                 I build amazing things for the web.
               </p>
             </div>
+            <ContactForm />
+
             {/* <div className="home-btn" >
             <a href="#contect" className='btn-text'>Contact me.</a>
           </div> */}
@@ -105,7 +118,6 @@ const Home = ({ setScale }) => {
           >
             <div>Contact Me.</div>
           </div>
-          <ContactForm />
         </div>
       </div>
     </>
