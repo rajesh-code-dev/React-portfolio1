@@ -6,6 +6,8 @@ import Header from "../header/Header";
 import { ContactForm } from "../component";
 const Home = ({ setScale }) => {
   const [txtTransform, setTxtTransform] = useState();
+  const [isContact, setIsContact] = useState(false);
+
   window.addEventListener("load", (event) => {
     setTxtTransform("0");
   });
@@ -32,8 +34,12 @@ const Home = ({ setScale }) => {
   return (
     <>
       <div className="container">
-        {/* <Header /> */}
-        <div className="home" id="home1">
+        <Header />
+        <div
+          className="home"
+          id="home1"
+          onClick={() => (isContact === true ? setIsContact(false) : "")}
+        >
           <div className="home-text">
             <div className="bounding">
               <h1
@@ -70,7 +76,7 @@ const Home = ({ setScale }) => {
                 I build amazing things for the web.
               </p>
             </div>
-            <ContactForm />
+            {isContact && <ContactForm setIsContact={s} />}
 
             {/* <div className="home-btn" >
             <a href="#contect" className='btn-text'>Contact me.</a>
@@ -104,7 +110,7 @@ const Home = ({ setScale }) => {
                 />
                 <text>
                   <textPath href="#path-circle" fill="white">
-                    RAJESH REACT DEVELOPER || JAVASCRIPT LOVER
+                    RAJESH REACT DEVELOPER || JAVASCRIPT LOVER ||
                   </textPath>
                 </text>
               </svg>
@@ -112,7 +118,7 @@ const Home = ({ setScale }) => {
           </div>
           <div
             className="arrow"
-            onClick={() => showForm()}
+            onClick={() => showForm(setIsContact(true))}
             onMouseOver={() => scaleCircle()}
             onMouseOut={() => setScale("1")}
           >

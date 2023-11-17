@@ -21,7 +21,9 @@ const ContactForm = () => {
     resolver: zodResolver(personSchema),
   });
 
-  const onSubmit = () => {};
+  const onSubmit = (data) => {
+    console.log(data);
+  };
 
   return (
     <div className="formBox">
@@ -30,6 +32,7 @@ const ContactForm = () => {
           <div>
             <label>Name</label>
             <input type="text" {...register("name")} placeholder="Enter here" />
+            {errors.name && <span>{errors.name.message}</span>}
           </div>
           <div>
             <label>Email</label>
@@ -38,6 +41,7 @@ const ContactForm = () => {
               {...register("email")}
               placeholder="Enter here"
             />
+            {errors.email && <span>{errors.email.message}</span>}
           </div>
           <div>
             <label>Message</label>
@@ -49,6 +53,9 @@ const ContactForm = () => {
             />
           </div>
         </fieldset>
+        <div>
+          <button type="submit"> Submit</button>
+        </div>
       </form>
     </div>
   );
