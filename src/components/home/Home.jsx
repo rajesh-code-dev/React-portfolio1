@@ -32,9 +32,16 @@ const Home = ({ setScale }) => {
   }, []);
 
   return (
-    <>
+    <div
+      className=""
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        background: "#000",
+      }}
+    >
       <div className="container">
-        <Header />
         <div
           className="home"
           id="home1"
@@ -76,13 +83,13 @@ const Home = ({ setScale }) => {
                 I build amazing things for the web.
               </p>
             </div>
-            {isContact && <ContactForm setIsContact={s} />}
+            {isContact && <ContactForm setIsContact={setIsContact} />}
 
             {/* <div className="home-btn" >
             <a href="#contect" className='btn-text'>Contact me.</a>
           </div> */}
           </div>
-          {/* <div className="homeFooter">
+          <div className="homeFooter">
             <p className="homeFooterText">
               I am a web developer specializing in Front-End development. A MERN
               Stack enthusiast, JavaScript lover.
@@ -95,7 +102,21 @@ const Home = ({ setScale }) => {
               I am a web developer specializing in Front-End development. A MERN
               Stack enthusiast, JavaScript lover.
             </p>
-          </div> */}
+          </div>
+          <div className="homeFooter1">
+            <p className="homeFooterText1">
+              I am a web developer specializing in Front-End development. A MERN
+              Stack enthusiast, JavaScript lover.
+            </p>
+            <p className="homeFooterText1">
+              I am a web developer specializing in Front-End development. A MERN
+              Stack enthusiast, JavaScript lover.
+            </p>
+            <p className="homeFooterText1">
+              I am a web developer specializing in Front-End development. A MERN
+              Stack enthusiast, JavaScript lover.
+            </p>
+          </div>
           <div className="svg-box">
             <div className="svg-container">
               <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +147,7 @@ const Home = ({ setScale }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 {
