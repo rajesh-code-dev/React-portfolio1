@@ -7,9 +7,11 @@ import { ContactForm } from "../component";
 const Home = ({ setScale }) => {
   const [txtTransform, setTxtTransform] = useState();
   const [isContact, setIsContact] = useState(false);
+  const [isTxtTransform, setIsTxtTransform] = useState(0);
 
   window.addEventListener("load", (event) => {
     setTxtTransform("0");
+    setIsTxtTransform(0.8);
   });
 
   localStorage.setItem("txtAnimate", txtTransform);
@@ -89,7 +91,10 @@ const Home = ({ setScale }) => {
             <a href="#contect" className='btn-text'>Contact me.</a>
           </div> */}
           </div>
-          <div className="homeFooter">
+          <div
+            className="homeFooter"
+            style={{ opacity: isTxtTransform, transition: "all 6s" }}
+          >
             <p className="homeFooterText">
               I am a web developer specializing in Front-End development. A MERN
               Stack enthusiast, JavaScript lover.
@@ -103,7 +108,10 @@ const Home = ({ setScale }) => {
               Stack enthusiast, JavaScript lover.
             </p>
           </div>
-          <div className="homeFooter1">
+          <div
+            className="homeFooter1"
+            style={{ opacity: isTxtTransform, transition: "all 6s" }}
+          >
             <p className="homeFooterText1">
               I am a web developer specializing in Front-End development. A MERN
               Stack enthusiast, JavaScript lover.

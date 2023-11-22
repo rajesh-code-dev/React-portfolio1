@@ -2,7 +2,7 @@
 
 .container {
   width: 100vw;
-  max-width: 1440px;
+  max-width: 1500px;
   max-height: 2000px;
   background-color: #000;
   position: relative;
@@ -10,12 +10,13 @@
 }
 
 .home {
-  width: 100vw;
-  max-width: 1400px;
+  /* width: 100vw;
+  max-width: 1500px; */
   height: 100vh;
   display: flex;
   gap: 5rem;
   background-color: #000;
+  justify-content: center;
 }
 
 .home .home-text {
@@ -109,14 +110,14 @@ p {
 .homeFooter {
   position: absolute;
   bottom: 206px;
-  width: 103vw;
+  width: 105vw;
   /* padding: 0 3vw; */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
   color: #000;
-  background-color: #fff;
+  background-color: yellow;
   opacity: 0.8;
   transform: rotate(11deg);
   margin-left: -20px;
@@ -125,14 +126,14 @@ p {
 .homeFooter1 {
   position: absolute;
   bottom: 206px;
-  width: 103vw;
+  width: 105vw;
   /* padding: 0 3vw; */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
   color: #000;
-  background-color: #fff;
+  background-color: #e0dddd;
   opacity: 0.8;
   transform: rotate(-11deg);
   margin-left: -20px;
