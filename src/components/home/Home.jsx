@@ -9,18 +9,22 @@ const Home = ({ setScale }) => {
   const [isContact, setIsContact] = useState(false);
   const [isTxtTransform, setIsTxtTransform] = useState(0);
 
-  window.addEventListener("load", (event) => {
+  useEffect(() => {
     setTxtTransform("0");
     setIsTxtTransform(0.8);
-  });
+  }, []);
 
-  localStorage.setItem("txtAnimate", txtTransform);
+  useEffect(() => {
+    localStorage.setItem("txtAnimate", txtTransform);
+  }, [txtTransform]);
 
   const scaleCircle = () => {
     setScale("30");
   };
 
-  const showForm = () => {};
+  const showForm = () => {
+    setIsContact(true);
+  };
 
   useEffect(() => {
     setTxtTransform("0");
@@ -129,11 +133,7 @@ const Home = ({ setScale }) => {
             <div className="svg-container">
               <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="
-       M 100, 100
-        m 75, 0
-        a 75,75 0 1,1 -150,0
-        a 75,75 0 1,1 150,0"
+                  d="M 100, 100 m 75, 0 a 75,75 0 1,1 -150,0 a 75,75 0 1,1 150,0"
                   id="path-circle"
                   fill="none"
                 />
